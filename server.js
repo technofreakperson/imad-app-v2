@@ -6,11 +6,11 @@ var app= express();
 app.use(morgan('combined'));
 
 app.get('/',function(req,res){
-    res.sendfile(path.join(_dirname,'ui','index.html'));
+    res.sendfile(path.join(__dirname,'ui','index.html'));
 });
 
 app.get('/article-one',function(req,res){
-    res.sendfile(path.join(_dirname,'ui','article-one.html'));
+    res.sendfile(path.join(__dirname,'ui','article-one.html'));
 });
 
 app.get('/article-two',function(req,res){
